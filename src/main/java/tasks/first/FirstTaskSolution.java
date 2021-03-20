@@ -20,9 +20,9 @@ public class FirstTaskSolution implements FirstTask {
         while (!dequeNode.isEmpty()){
 
             for (int i = 0; i < adjacencyMatrix.length; i++) {
-                if((!setNode.contains(i+1))&(adjacencyMatrix[startIndex-1][i])){
-                    setNode.add(i+1);
-                    dequeNode.addLast(i+1);
+                if((!setNode.contains(i))&(adjacencyMatrix[startIndex][i])){
+                    setNode.add(i);
+                    dequeNode.addLast(i);
                 }
             }
 
